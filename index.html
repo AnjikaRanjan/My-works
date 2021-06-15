@@ -1,8 +1,13 @@
+
 <html>
 <head><title>My webpage</title>
    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
  <body>
+     <div class="container">
   <h1>My work</h1>
    <section id="apps">
      <h1>Apps</h1>
@@ -11,12 +16,32 @@
        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/McGVXmcrwDyDiFkNV5QlYDZM_3NjynxgKYCrZaQ2zCM/embed"></iframe>
      </section> 
      <br><br><br>
-     <section id="games">
-     <h1>Games</h1>
-      <div class="line"></div> 
-       <a href="https://studio.code.org/projects/spritelab/UwO9qaDbh-5cBKKuNu-LgU_1uX-t-5oC_5iFAJv7ZBQ" target="_blank"><img src="winnie%20the%20pooh.png"></a>
-         <a href="https://studio.code.org/projects/playlab/Y5jnpoA5MrcG6_4x9czqkUcQVBkAf2mh1pY1pPR9KHQ" target="_blank"><img src="dragon%20attack.png"></a>
-     </section>
+     <h2>Click on the games to explore</h2>
+       <h5>These games are built in gamelab , click to play.</h5>  
+        <div id="myCarousel" class="carousel slide">
+         <div class="carousel-inner">
+           <div class="item active">
+            <center>
+              <a href="https://studio.code.org/projects/spritelab/UwO9qaDbh-5cBKKuNu-LgU_1uX-t-5oC_5iFAJv7ZBQ" target="_blank"><img src="winnie%20the%20pooh.png" class="img-responsive"></a>
+               <div class="carousel-content">
+               <p>Winnie the pooh</p>
+               </div>
+               </center>
+            </div>
+         <div class="item">
+         <center>
+              <a href="https://studio.code.org/projects/playlab/Y5jnpoA5MrcG6_4x9czqkUcQVBkAf2mh1pY1pPR9KHQ" target="_blank"><img src="dragon%20attack.png" class="img-responsive"></a>
+             <div class="carousel-content">
+             <p>Save the city !</p>
+             </div>
+             </center>
+             </div></div>
+     <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span>
+     </a>
+     <a class="right carousel-control" href="#myCarousel" data-slide="next">
+         <span class="glyphicon glyphicon-chevron-right"></span>
+     </a>
+         </div>
      <br><br><br>
      <section id="chatbot">
      <h1>Chat bot</h1>
@@ -28,5 +53,6 @@
     src="https://console.dialogflow.com/api-client/demo/embedded/5aefae61-8882-4a9d-9c8a-20cf429da000">
 </iframe>
      </section>
+ </div>
  </body>
  </html>
